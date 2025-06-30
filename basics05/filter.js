@@ -12,3 +12,6 @@ const books = [
 
 const val = books.filter((bk) => bk.genre === "History")
 console.log(val)
+
+const val2 = books.filter((num) => num.genre == "History" && num.publish > 1990)
+console.log(val2)
