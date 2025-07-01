@@ -1,0 +1,28 @@
+.button {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    margin: 10px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#black {
+    background-color: black;
+}
