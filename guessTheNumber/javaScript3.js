@@ -8,7 +8,7 @@ const remaining = document.querySelector('.lastResult');
 const LowOrHigh = document.querySelector('.LowOrHigh');
 const startOver = document.querySelector('.resultParas');
 
-const p = documnet.createElement('p');
+const p = document.createElement('p');
 let prevGuess = [];
 let numGuess = 1;
 
@@ -56,7 +56,7 @@ function displayGuess(guess) {
     userInput.value = '';
     guessSlot.innerHTML += `${guess},`;
     numGuess++;
-    remaining.innerHTML = `${10-numGuess}`;
+    remaining.innerHTML = `${11 - numGuess}`;
 }
 
 function displayMessage(message) {
@@ -74,7 +74,7 @@ function endGame() {
 }
 
 function newGame() {
-    const newGame = document.querySElector('#newGame');
+    const newGame = document.querySelector('#newGame');
     newGame.addEventListener('click', function(e) {
         randomNumber = Math.floor(Math.random() * 100 + 1);
         prevGuess = [];
